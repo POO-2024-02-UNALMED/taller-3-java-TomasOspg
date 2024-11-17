@@ -74,4 +74,40 @@ public class TV {
     public static void setNumTV(int num) {
         numTV = num;
     }
+
+    public void turnOn() {
+        this.estado = true;
+    }
+
+    public void turnOff() {
+        this.estado = false;
+    }
+
+    public void canalUp() {
+        if (this.estado && this.canal < 120) {
+            this.canal++;
+        }
+    }
+
+    public void canalDown() {
+        if (this.estado && this.canal > 1) {
+            this.canal--;
+        }
+    }
+
+    public void volumenUp() {
+        if (this.estado && this.volumen < 7) {
+            this.volumen++;
+        }
+    }
+
+    public void volumenDown() {
+        if (this.estado && this.volumen > 0) {
+            this.volumen--;
+        }
+    }
+
+    public static int getNumTV() {
+        return getNumTV();
+    }
 }
