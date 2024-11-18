@@ -5,7 +5,7 @@ public class Marca {
     public String nombre;
 
     public Marca(String nombre) {
-        this.nombre = nombre;
+        this.setNombre(nombre);
     }
 
     public String getNombre() {
